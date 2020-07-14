@@ -27,10 +27,7 @@ spec:
         ports:
         - containerPort: 80
           protocol: TCP
-<<<<<<< HEAD
         securityContext:
-=======
->>>>>>> cc710042767e103f82610ca187a09bd064e897e1
           capabilities:
             add:
             - NET_BIND_SERVICE
@@ -39,7 +36,6 @@ spec:
           readOnlyRootFilesystem: true
           runAsNonRoot: true
           runAsUser: 10001
-<<<<<<< HEAD
         livenessProbe:
           httpGet:
             path: /health
@@ -52,9 +48,6 @@ spec:
             port: 80
           initialDelaySeconds: 180
           periodSeconds: 3
-=======
-
->>>>>>> cc710042767e103f82610ca187a09bd064e897e1
 ---
 apiVersion: v1
 kind: Service
