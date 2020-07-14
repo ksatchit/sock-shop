@@ -73,6 +73,9 @@ Chaos experiments on sock-shop app with grafana dashboard to monitor it.
 
 - Access the grafana dashboard via the NodePort (or loadbalancer) service IP or via a port-forward operation on localhost
 
+  Note: To change the service type to Loadbalancer, perform a `kubectl edit svc prometheus -n monitoring` and replace 
+  `type: NodePort` to `type: LoadBalancer`
+
   ```
   kubectl get svc -n monitoring 
   ```
