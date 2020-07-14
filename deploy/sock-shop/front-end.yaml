@@ -31,6 +31,7 @@ spec:
           requests:
             cpu: 100m
             memory: 100Mi
+<<<<<<< HEAD
         livenessProbe:
           httpGet:
             path: /
@@ -43,6 +44,8 @@ spec:
             port: 8079
           initialDelaySeconds: 30
           periodSeconds: 3
+=======
+>>>>>>> cc710042767e103f82610ca187a09bd064e897e1
         securityContext:
           capabilities:
             drop:

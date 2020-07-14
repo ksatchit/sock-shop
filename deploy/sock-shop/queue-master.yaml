@@ -27,6 +27,7 @@ spec:
         ports:
         - containerPort: 80
           protocol: TCP
+<<<<<<< HEAD
         livenessProbe:
           httpGet:
             path: /health
@@ -40,6 +41,8 @@ spec:
           initialDelaySeconds: 180
           periodSeconds: 3
 
+=======
+>>>>>>> cc710042767e103f82610ca187a09bd064e897e1
 ---
 apiVersion: v1
 kind: Service
