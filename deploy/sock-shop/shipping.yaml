@@ -43,7 +43,6 @@ spec:
           readOnlyRootFilesystem: true
           runAsNonRoot: true
           runAsUser: 10001
-<<<<<<< HEAD
         livenessProbe:
           httpGet:
             path: /health
@@ -56,13 +55,6 @@ spec:
             port: 80
           initialDelaySeconds: 180
           periodSeconds: 3
-      volumes:
-        - name: tmp-volume
-          emptyDir:
-            medium: Memory
-
-=======
->>>>>>> cc710042767e103f82610ca187a09bd064e897e1
         volumeMounts:
         - mountPath: /tmp
           name: tmp-volume
