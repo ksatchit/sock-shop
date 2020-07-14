@@ -41,6 +41,7 @@ spec:
             - all
           readOnlyRootFilesystem: true
           runAsNonRoot: true
+          runAsUser: 10001
         livenessProbe:
           httpGet:
             path: /health
