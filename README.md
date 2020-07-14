@@ -85,7 +85,7 @@ Chaos experiments on sock-shop app with grafana dashboard to monitor it.
 
 - Import the grafana dashboard "Sock-Shop Performance" provided [here](https://raw.githubusercontent.com/ksatchit/sock-shop/master/deploy/monitoring/10-grafana-dashboard.json)
 
- ![image](https://user-images.githubusercontent.com/21166217/87426547-f28d5300-c5fc-11ea-95da-e091fb07f1b5.png)
+  ![image](https://user-images.githubusercontent.com/21166217/87426547-f28d5300-c5fc-11ea-95da-e091fb07f1b5.png)
 
 ## Step-4: Execute the Chaos Experiments
 
@@ -116,7 +116,7 @@ Chaos experiments on sock-shop app with grafana dashboard to monitor it.
 - Observe the impact of chaos injection through increased Latency & reduced QPS (queries per second) on the microservices 
   under test. 
 
-![image](https://user-images.githubusercontent.com/21166217/87426747-4d26af00-c5fd-11ea-8d82-dabf6bc9048a.png)
+  ![image](https://user-images.githubusercontent.com/21166217/87426747-4d26af00-c5fd-11ea-8d82-dabf6bc9048a.png)
 
-![image](https://user-images.githubusercontent.com/21166217/87426820-6cbdd780-c5fd-11ea-88de-1fe8a1b5b503.png)
+  ![image](https://user-images.githubusercontent.com/21166217/87426820-6cbdd780-c5fd-11ea-88de-1fe8a1b5b503.png)
 
