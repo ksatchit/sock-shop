@@ -61,14 +61,14 @@ Chaos experiments on sock-shop app with grafana dashboard to monitor it.
 - Apply the monitoring manifests in specified order
 
   ```
-  kubectl apply deploy/monitoring/01-monitoring-ns.yaml
-  kubectl apply deploy/monitoring/02-prometheus-rbac.yaml
-  kubectl apply deploy/monitoring/03-prometheus-configmap.yaml
-  kubectl apply deploy/monitoring/04-prometheus-alert-rules.yaml
-  kubectl apply deploy/monitoring/05-prometheus-deployment.yaml
-  kubectl apply deploy/monitoring/06-prometheus-svc.yaml
-  kubectl apply deploy/monitoring/07-grafana-deployment.yaml
-  kubectl apply deploy/monitoring/08-grafana-svc.yaml
+  kubectl apply -f deploy/monitoring/01-monitoring-ns.yaml
+  kubectl apply -f deploy/monitoring/02-prometheus-rbac.yaml
+  kubectl apply -f deploy/monitoring/03-prometheus-configmap.yaml
+  kubectl apply -f deploy/monitoring/04-prometheus-alert-rules.yaml
+  kubectl apply -f deploy/monitoring/05-prometheus-deployment.yaml
+  kubectl apply -f deploy/monitoring/06-prometheus-svc.yaml
+  kubectl apply -f deploy/monitoring/07-grafana-deployment.yaml
+  kubectl apply -f deploy/monitoring/08-grafana-svc.yaml
   ```
 
 - Access the grafana dashboard via the NodePort (or loadbalancer) service IP or via a port-forward operation on localhost
