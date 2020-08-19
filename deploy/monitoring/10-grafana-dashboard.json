@@ -79,14 +79,14 @@
       "renderer": "flot",
       "seriesOverrides": [
         {
-          "alias": "catalogue-cpu-hog",
+          "alias": "kube-chaos",
           "color": "#96D98D",
           "fillGradient": 5,
           "stack": "A",
           "steppedLine": true
         },
         {
-          "alias": "orders-memory-hog",
+          "alias": "app-chaos",
           "color": "#E0B400",
           "fillGradient": 5,
           "stack": "B",
@@ -98,22 +98,22 @@
       "steppedLine": true,
       "targets": [
         {
-          "expr": "heptio_eventrouter_normal_total{reason=\"ChaosInject\",involved_object_name=\"catalogue-cpu-hog\", involved_object_namespace=\"litmus\", involved_object_kind=\"ChaosEngine\"} - on () (heptio_eventrouter_normal_total{reason=\"PostChaosCheck\",involved_object_name=\"catalogue-cpu-hog\", involved_object_namespace=\"litmus\", involved_object_kind=\"ChaosEngine\"} OR on() vector(0))",
+          "expr": "heptio_eventrouter_normal_total{reason=\"ChaosInject\",involved_object_name=\"kube-chaos\", involved_object_namespace=\"litmus\", involved_object_kind=\"ChaosEngine\"} - on () (heptio_eventrouter_normal_total{reason=\"PostChaosCheck\",involved_object_name=\"kube-chaos\", involved_object_namespace=\"litmus\", involved_object_kind=\"ChaosEngine\"} OR on() vector(0))",
           "format": "time_series",
           "instant": false,
           "interval": "",
           "intervalFactor": 2,
-          "legendFormat": "catalogue-cpu-hog",
+          "legendFormat": "kube-chaos",
           "refId": "A",
           "step": 2
         },
         {
-          "expr": "heptio_eventrouter_normal_total{reason=\"ChaosInject\",involved_object_name=\"orders-memory-hog\", involved_object_namespace=\"litmus\", involved_object_kind=\"ChaosEngine\"} - on () (heptio_eventrouter_normal_total{reason=\"PostChaosCheck\",involved_object_name=\"orders-memory-hog\", involved_object_namespace=\"litmus\", involved_object_kind=\"ChaosEngine\"} OR on() vector(0))",
+          "expr": "heptio_eventrouter_normal_total{reason=\"ChaosInject\",involved_object_name=\"app-chaos\", involved_object_namespace=\"litmus\", involved_object_kind=\"ChaosEngine\"} - on () (heptio_eventrouter_normal_total{reason=\"PostChaosCheck\",involved_object_name=\"app-chaos\", involved_object_namespace=\"litmus\", involved_object_kind=\"ChaosEngine\"} OR on() vector(0))",
           "format": "time_series",
           "instant": false,
           "interval": "",
           "intervalFactor": 2,
-          "legendFormat": "orders-memory-hog",
+          "legendFormat": "app-chaos",
           "refId": "B",
           "step": 2
         }
@@ -527,7 +527,7 @@
           "step": 2
         },
         {
-          "expr": "heptio_eventrouter_normal_total{reason=\"ChaosInject\",involved_object_name=\"orders-memory-hog\", involved_object_namespace=\"litmus\", involved_object_kind=\"ChaosEngine\"} - on () (heptio_eventrouter_normal_total{reason=\"PostChaosCheck\",involved_object_name=\"orders-memory-hog\", involved_object_namespace=\"litmus\", involved_object_kind=\"ChaosEngine\"} OR on() vector(0))",
+          "expr": "heptio_eventrouter_normal_total{reason=\"ChaosInject\",involved_object_name=\"app-chaos\", involved_object_namespace=\"litmus\", involved_object_kind=\"ChaosEngine\"} - on () (heptio_eventrouter_normal_total{reason=\"PostChaosCheck\",involved_object_name=\"app-chaos\", involved_object_namespace=\"litmus\", involved_object_kind=\"ChaosEngine\"} OR on() vector(0))",
           "interval": "",
           "legendFormat": "Chaos Period",
           "refId": "C"
@@ -663,7 +663,7 @@
           "step": 2
         },
         {
-          "expr": "heptio_eventrouter_normal_total{reason=\"ChaosInject\",involved_object_name=\"orders-memory-hog\", involved_object_namespace=\"litmus\", involved_object_kind=\"ChaosEngine\"} - on () (heptio_eventrouter_normal_total{reason=\"PostChaosCheck\",involved_object_name=\"orders-memory-hog\", involved_object_namespace=\"litmus\", involved_object_kind=\"ChaosEngine\"} OR on() vector(0))",
+          "expr": "heptio_eventrouter_normal_total{reason=\"ChaosInject\",involved_object_name=\"app-chaos\", involved_object_namespace=\"litmus\", involved_object_kind=\"ChaosEngine\"} - on () (heptio_eventrouter_normal_total{reason=\"PostChaosCheck\",involved_object_name=\"app-chaos\", involved_object_namespace=\"litmus\", involved_object_kind=\"ChaosEngine\"} OR on() vector(0))",
           "interval": "",
           "legendFormat": "Chaos Period",
           "refId": "D"
@@ -800,7 +800,7 @@
           "step": 2
         },
         {
-          "expr": "heptio_eventrouter_normal_total{reason=\"ChaosInject\",involved_object_name=\"catalogue-cpu-hog\", involved_object_namespace=\"litmus\", involved_object_kind=\"ChaosEngine\"} - on () (heptio_eventrouter_normal_total{reason=\"PostChaosCheck\",involved_object_name=\"catalogue-cpu-hog\", involved_object_namespace=\"litmus\", involved_object_kind=\"ChaosEngine\"} OR on() vector(0))",
+          "expr": "heptio_eventrouter_normal_total{reason=\"ChaosInject\",involved_object_name=\"kube-chaos\", involved_object_namespace=\"litmus\", involved_object_kind=\"ChaosEngine\"} - on () (heptio_eventrouter_normal_total{reason=\"PostChaosCheck\",involved_object_name=\"kube-chaos\", involved_object_namespace=\"litmus\", involved_object_kind=\"ChaosEngine\"} OR on() vector(0))",
           "interval": "",
           "legendFormat": "Chaos Period",
           "refId": "C"
@@ -937,7 +937,7 @@
           "step": 2
         },
         {
-          "expr": "heptio_eventrouter_normal_total{reason=\"ChaosInject\",involved_object_name=\"catalogue-cpu-hog\", involved_object_namespace=\"litmus\", involved_object_kind=\"ChaosEngine\"} - on () (heptio_eventrouter_normal_total{reason=\"PostChaosCheck\",involved_object_name=\"catalogue-cpu-hog\", involved_object_namespace=\"litmus\", involved_object_kind=\"ChaosEngine\"} OR on() vector(0))",
+          "expr": "heptio_eventrouter_normal_total{reason=\"ChaosInject\",involved_object_name=\"kube-chaos\", involved_object_namespace=\"litmus\", involved_object_kind=\"ChaosEngine\"} - on () (heptio_eventrouter_normal_total{reason=\"PostChaosCheck\",involved_object_name=\"kube-chaos\", involved_object_namespace=\"litmus\", involved_object_kind=\"ChaosEngine\"} OR on() vector(0))",
           "interval": "",
           "legendFormat": "Chaos Period",
           "refId": "D"
